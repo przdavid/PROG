@@ -1,0 +1,14 @@
+package exercise2;
+import java.util.Scanner;
+import exercise2.Fraction;
+
+public class TestFraction {
+  public static void main(String args[])  {
+    Fraction f1 = new Fraction(4, 3);
+    Scanner s = new Scanner(System.in);
+        
+    // Mostrar fracción
+    System.out.println(f1);
+  }
+  
+}

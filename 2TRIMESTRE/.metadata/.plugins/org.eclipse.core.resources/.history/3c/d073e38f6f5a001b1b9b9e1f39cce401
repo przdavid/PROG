@@ -1,0 +1,11 @@
+package exercise1;
+
+/**
+ * Clase que representa a los objetos de tipo Tiempo.
+ * @author david
+ *
+ */
+
+public class Time {
+  
+}

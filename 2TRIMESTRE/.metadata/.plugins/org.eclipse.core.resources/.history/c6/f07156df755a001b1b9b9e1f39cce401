@@ -1,0 +1,16 @@
+package exercise1;
+import java.util.Scanner;
+import exercise1.Time;
+
+public class TestTime {
+  public static void main(String args[]) {
+    Scanner s = new Scanner(System.in);
+    Time t = new Time(0, 0, 15323);
+    
+    // Mostrar la cadena tiempo
+    System.out.print(t);
+    
+    // Sumar y restar segundos, minutos y horas
+    
+  }
+}

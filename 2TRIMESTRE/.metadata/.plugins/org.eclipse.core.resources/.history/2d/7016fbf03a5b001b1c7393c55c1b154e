@@ -1,0 +1,32 @@
+package exercise2;
+import java.util.Scanner;
+import exercise2.Fraction;
+
+public class TestFraction {
+  public static void main(String args[])  {
+    // Declaración de variables
+    Fraction f1 = new Fraction(3, 4);
+    Scanner s = new Scanner(System.in);
+    
+    // Informar del programa
+    System.out.println("╔═══════════════════════════════════════╗");
+    System.out.println("║ Test de objetos de la clase Fracción. ║");
+    System.out.println("╚═══════════════════════════════════════╝");
+        
+    // Mostrar fracción
+    System.out.println("Fracción 1: " + f1);
+    
+    // Cambiar los valores de la fracción
+    System.out.println("Vamos a cambiar los valores de Fracción 1.");
+    System.out.print("Introduzca el nuevo numerador: ");
+    f1.setNumerator(s.nextInt());
+    System.out.print("Introduzca el nuevo denominador: ");
+    f1.setDenominator(s.nextInt());
+    
+    System.out.println("La nueva Fracción 1 es: " + f1);
+    
+    // Calcular el valor de la fracción
+    System.out.println("El valor de la Fracción 1 (" + f1 + ") es: " Float.toString(f1.calculateFraction()));
+  }
+  
+}

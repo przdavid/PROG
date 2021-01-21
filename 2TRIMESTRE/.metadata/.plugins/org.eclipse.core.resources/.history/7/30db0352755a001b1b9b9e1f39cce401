@@ -1,0 +1,69 @@
+package exercise1;
+
+/**
+ * Clase que representa a los objetos de tipo Tiempo.
+ * @author David Pérez Ruiz
+ * Fecha: 19/01/2021
+ * 
+ * El formato de la clase es: Time(hour, minute, second)
+ * Ejemplo: Time(1, 20, 30)
+ * @param hour: horas de la clase Time.
+ * @param minute: minutos de la clase Time.
+ * @param second: segundos de la clase Time.
+ */
+
+public class Time {
+  // Atributos
+  int hour;
+  int minute;
+  int second;
+  
+  // Constructor
+  Time(int h, int m, int s) {
+    int auxiliarSecond = (h*3600) + (m*60) + s;
+    this.hour = auxiliarSecond/3600;
+    this.minute = (auxiliarSecond%3600)/60;
+    this.second = auxiliarSecond - (this.hour*3600) - (this.minute*60);
+  }
+  
+  //Getters
+  /**
+   * @return the hour
+   */
+  public int getHour() {
+    return hour;
+  }
+
+  /**
+   * @return the minute
+   */
+  public int getMinute() {
+    return minute;
+  }
+
+  /**
+   * @return the second
+   */
+  public int getSecond() {
+    return second;
+  }
+  
+  // Métodos
+  /**
+   * Método: addSecond
+   * Propósito: suma segundos a un objeto Time.
+   * @param s cantidad de segundos a sumar en el objeto Time.
+   */
+  public
+  
+  /**
+   * Método: toString
+   * Propósito: Devuelve una cadena con el tiempo almacenado, de forma que si lo que hay es (10, 35, 5)
+   * la cadena resultante sea 10h 35m 5s.
+   */
+  @Override
+  public String toString() {
+    return Integer.toString(this.hour) + "h " + Integer.toString(this.minute) + "m " +
+    Integer.toString(this.second) + "s";
+  }
+}

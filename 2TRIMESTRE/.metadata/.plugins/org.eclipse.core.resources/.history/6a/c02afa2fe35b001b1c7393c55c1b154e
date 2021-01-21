@@ -1,0 +1,69 @@
+package exercise2;
+import java.util.Scanner;
+import exercise2.Fraction;
+
+public class TestFraction {
+  public static void main(String args[])  {
+    // Declaración de variables
+    Scanner s = new Scanner(System.in);
+    Fraction f1 = new Fraction(3, 4);
+    int n;
+    
+    // Informar del programa
+    System.out.println("╔═══════════════════════════════════════╗");
+    System.out.println("║ Test de objetos de la clase Fracción. ║");
+    System.out.println("╚═══════════════════════════════════════╝");
+    
+    // Mostrar fracción y sus atributos
+    System.out.println("Fracción 1: " + f1);
+    System.out.println("El numerador de Fracción 1 es: " + f1.getNumerator());
+    System.out.println("El denominador de Fracción 1 es: " + f1.getDenominator());
+    
+    // Cambiar los valores de la fracción
+    System.out.println("Vamos a cambiar los valores de Fracción 1.");
+    System.out.print("Introduzca el nuevo numerador: ");
+    f1.setNumerator(s.nextInt());
+    System.out.print("Introduzca el nuevo denominador: ");
+    f1.setDenominator(s.nextInt());
+    
+    System.out.println("La nueva Fracción 1 es: " + f1);
+    
+    // Calcular el valor de la fracción
+    System.out.println("El valor de la Fracción 1 (" + f1 + ") es: " + Float.toString(f1.calculateFraction()));
+    
+    // Multiplicar la fracción por un número
+    System.out.println("Vamos a multiplicar la fracción por un número.");
+    System.out.print("Introduzca un número: ");
+    n = s.nextInt();
+    
+    System.out.print("(" + f1 + ") x " + n + " = ");
+    f1.multiplyNumber(n);
+    System.out.println(f1);
+    
+    // Sumar, restar y multiplicar fracciones
+    System.out.println("Vamos a sumar, restar y multiplicar fracciones.");
+    Fraction f2 = new Fraction(2, 5);
+    Fraction f3 = new Fraction(1, 6);
+    Fraction f4 = new Fraction(7, 3);
+    
+    // Suma
+    System.out.print(f1 +" + " + f2 + " = ");
+    f1.addFraction(f2);
+    System.out.println(f1);
+    
+    // Resta
+    System.out.print(f1 +" - " + f3 + " = ");
+    f1.substractFraction(f3);
+    System.out.println(f1);
+    
+    // Multiplicación
+    System.out.print(f1 +" x " + f4 + " = ");
+    f1.multiplyFraction(f4);
+    System.out.println(f1);
+    
+    // Simplificar fracciones
+    System.out.println("Vamos a simplificar la Fracción 1: " + f1);
+    f1.simplifyFraction();
+    System.out.println(f1);
+  }
+}

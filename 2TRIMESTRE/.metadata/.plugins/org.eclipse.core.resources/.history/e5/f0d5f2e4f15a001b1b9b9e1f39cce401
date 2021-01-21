@@ -1,0 +1,48 @@
+package exercise2;
+
+/**
+ * Clase que representa a los objetos de tipo Fracción.
+ * @author David Pérez Ruiz
+ * Fecha: 20/01/2021
+ * 
+ * El formato de la clase es: Fraction(numerator, denominator).
+ * @param numerator: numerador de la clase Fraction.
+ * @param denominator: denominador de la clase Fraction.
+ */
+
+public class Fraction {
+  // Atributos
+  int numerator;
+  int denominator;
+  
+  // Constructor
+  Fraction(int n, int d) {
+    this.numerator = n;
+    this.denominator = d;
+  }
+  
+  // Getters
+  /**
+   * @return numerador de la fracción.
+   */
+  public int getNumerator() {
+    return numerator;
+  }
+
+  /**
+   * @return denominador de la fracción.
+   */
+  public int getDenominator() {
+    return denominator;
+  }
+  
+  // Métodos
+  /**
+   * Método: toString
+   * Propósito: Devuelve la fracción como una cadena de caracteres.
+   */
+  @Override
+  public String toString {
+    
+  }
+}

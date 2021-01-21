@@ -1,0 +1,14 @@
+package exercise1;
+
+/**
+ * Clase que representa a los objetos de tipo Tiempo.
+ * @author David Pérez Ruiz
+ * Fecha: 19/01/2021
+ * 
+ * El formato de la clase es: Time(hour, minute, second)
+ * Ejemplo: Time(1, 20, 30)
+ */
+
+public class Time {
+  
+}

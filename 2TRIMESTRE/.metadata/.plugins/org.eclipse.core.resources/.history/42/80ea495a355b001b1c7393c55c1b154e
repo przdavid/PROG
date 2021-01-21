@@ -1,0 +1,6 @@
+package exercise2;
+import exercise2.Fraction;
+
+public class TestFraction {
+
+}

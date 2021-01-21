@@ -1,0 +1,8 @@
+package exercise2;
+import exercise2.Fraction;
+
+public class TestFraction {
+  public static void main(String args[])  {
+    
+  }
+}

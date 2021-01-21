@@ -1,0 +1,29 @@
+package exercise1;
+import java.util.Scanner;
+import exercise1.Time;
+
+public class TestTime {
+  public static void main(String args[]) {
+    Scanner s = new Scanner(System.in);
+    Time t = new Time(4, 15, 23);
+    
+    // Mostrar la cadena tiempo
+    System.out.println(t);
+    
+    // Sumar y restar segundos, minutos y horas
+    System.out.println("Sumar 45 segundos al objeto tiempo:");
+    t.addSeconds(45);
+    System.out.println(t);
+    
+    System.out.println("Restar 27 segundos al objeto tiempo:");
+    t.substractSeconds(27);
+    System.out.println(t);
+
+    System.out.println("Sumar 72 minutos al objeto tiempo:");
+    t.addMinutes(72);
+    System.out.println(t);
+    System.out.println("Restar 140 minutos al objeto tiempo:");
+    t.substractMinutes(72);
+    System.out.println(t);
+  }
+}

@@ -1,0 +1,41 @@
+package exercise1;
+import exercise1.Time;
+
+public class TestTime {
+  public static void main(String args[]) {
+    Time t = new Time(4, 15, 23);
+    
+ // Informar del programa
+    System.out.println("╔═════════════════════════════════════╗");
+    System.out.println("║ Test de objetos de la clase Tiempo. ║");
+    System.out.println("╚═════════════════════════════════════╝");
+    
+    // Mostrar la cadena tiempo
+    System.out.println(t);
+    
+    // Sumar y restar objetos de clase Tiempo
+    
+    // Sumar y restar segundos, minutos y horas
+    System.out.println("Sumar 45 segundos al objeto tiempo:");
+    t.addSeconds(45);
+    System.out.println(t);
+    
+    System.out.println("Restar 27 segundos al objeto tiempo:");
+    t.substractSeconds(27);
+    System.out.println(t);
+
+    System.out.println("Sumar 72 minutos al objeto tiempo:");
+    t.addMinutes(72);
+    System.out.println(t);
+    System.out.println("Restar 140 minutos al objeto tiempo:");
+    t.substractMinutes(140);
+    System.out.println(t);
+    
+    System.out.println("Sumar 5 horas al objeto tiempo:");
+    t.addHours(5);
+    System.out.println(t);
+    System.out.println("Restar 3 horas al objeto tiempo:");
+    t.substractHours(3);
+    System.out.println(t);
+  }
+}
