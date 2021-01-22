@@ -141,12 +141,10 @@ public class Fraction {
       this.denominator = 1;
     // Si no, dividir el numerador y el denominador por el mismo número hasta su irreducible
     } else {
-      while (Math.abs(this.numerator) > i || Math.abs(this.denominator) > i) {
+      while (Math.abs(this.numerator) > i && Math.abs(this.denominator) > i) {
         if (this.numerator%i == 0 && this.denominator%i == 0) {
           this.numerator /= i;
           this.denominator /= i;
-          
-          i = 2;
         } else {
           i++;
         }
